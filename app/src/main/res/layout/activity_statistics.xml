@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
+    android:background="#575757"
     tools:context=".StatisticsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryVariant"
+        android:background="#8D8989"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_back"
         app:title="@string/statistics"
-        app:titleTextColor="?attr/colorOnPrimary" />
+        android:textColor="@color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardBackgroundColor="#8D8989"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
 
@@ -49,7 +49,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/total_focus_time"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="0h 0m"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="24sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardBackgroundColor="#8D8989"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
 
@@ -82,7 +82,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/completed_sessions"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -103,7 +103,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/today"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
                             <TextView
@@ -111,8 +111,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="0"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:text="@string/_0"
+                                android:textColor="@color/white"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -128,7 +128,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/this_week"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
                             <TextView
@@ -136,8 +136,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="0"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:text="@string/_0"
+                                android:textColor="@color/white"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -153,7 +153,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/total"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
                             <TextView
@@ -161,8 +161,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="0"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:text="@string/_0"
+                                android:textColor="@color/white"
                                 android:textSize="24sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -174,7 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardBackgroundColor="#8D8989"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
 
@@ -188,7 +188,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/daily_streak"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -203,15 +203,15 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_fire"
-                            app:tint="?attr/colorAccent" />
+                            app:tint="#351313" />
 
                         <TextView
                             android:id="@+id/text_daily_streak"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:text="0"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:text="@string/_0"
+                            android:textColor="@color/white"
                             android:textSize="24sp"
                             android:textStyle="bold" />
 
@@ -220,7 +220,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="@string/days"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -230,8 +230,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardBackgroundColor="#8D8989"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
 
@@ -245,257 +244,233 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/weekly_activity"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
-                    <com.google.android.material.card.MaterialCardView
+                    <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        app:cardBackgroundColor="?attr/colorPrimaryVariant"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp">
+                        android:layout_marginTop="16dp">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:padding="16dp">
+                            android:id="@+id/layout_weekly_chart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:orientation="horizontal"
+                            android:gravity="bottom">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/weekly_activity"
-                                android:textColor="?attr/colorOnPrimary"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
+                            <!-- Day columns will be added dynamically -->
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                            <HorizontalScrollView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp">
-
-                                <LinearLayout
-                                    android:id="@+id/layout_weekly_chart"
+                                <TextView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="200dp"
-                                    android:orientation="horizontal"
-                                    android:gravity="bottom">
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <!-- Gün sütunları dinamik olarak eklenecek -->
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Pzt"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Pzt"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sal"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Sal"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Çar"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Çar"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Per"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Per"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cum"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginEnd="8dp"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Cum"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginEnd="8dp"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cmt"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
 
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
+                            <LinearLayout
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="bottom|center_horizontal">
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Cmt"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/_0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginBottom="4dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="48dp"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:gravity="bottom|center_horizontal">
+                                <View
+                                    android:layout_width="24dp"
+                                    android:layout_height="0dp"
+                                    android:background="?attr/colorAccent" />
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="0"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginBottom="4dp"/>
-
-                                        <View
-                                            android:layout_width="24dp"
-                                            android:layout_height="0dp"
-                                            android:background="?attr/colorAccent" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Paz"
-                                            android:textColor="?attr/colorOnPrimary"
-                                            android:textSize="12sp"
-                                            android:layout_marginTop="4dp"/>
-                                    </LinearLayout>
-                                </LinearLayout>
-                            </HorizontalScrollView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Paz"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="4dp"/>
+                            </LinearLayout>
                         </LinearLayout>
-                    </com.google.android.material.card.MaterialCardView>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="?attr/colorPrimaryVariant"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
@@ -510,7 +485,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/most_productive_days"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -531,7 +506,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/day"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
                             <TextView
@@ -539,8 +514,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="-"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:text="@string/minus"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -556,7 +531,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/time"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
                             <TextView
@@ -564,8 +539,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:text="-"
-                                android:textColor="?attr/colorOnPrimary"
+                                android:text="@string/minus"
+                                android:textColor="@color/white"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
                         </LinearLayout>
@@ -577,7 +552,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="?attr/colorPrimaryVariant"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp">
@@ -592,7 +566,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/achievement"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -609,7 +583,7 @@
                         android:layout_marginTop="16dp"
                         android:gravity="center"
                         android:text="@string/no_achievements_yet"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:visibility="gone" />
                 </LinearLayout>
@@ -624,6 +598,7 @@
                 android:text="@string/export_statistics"
                 android:textSize="16sp"
                 app:cornerRadius="30dp" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

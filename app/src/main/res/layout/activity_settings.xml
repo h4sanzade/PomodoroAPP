@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_back"
         app:title="@string/settings"
-        app:titleTextColor="?attr/colorOnPrimary" />
+        android:textColor="@color/white" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/timer_settings"
-                android:textColor="?attr/colorOnPrimary"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -65,7 +65,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/focus_duration_min"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <SeekBar
@@ -83,7 +83,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="25"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </LinearLayout>
 
@@ -99,7 +99,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/break_duration_min"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <SeekBar
@@ -117,7 +117,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:text="5"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/daily_goal"
-                android:textColor="?attr/colorOnPrimary"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/daily_focus_sessions_goal"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="16sp" />
 
                     <SeekBar
@@ -170,7 +170,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:text="8"
-                        android:textColor="?attr/colorOnPrimary"
+                        android:textColor="@color/white"
                         android:textSize="16sp" />
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -180,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/appearance"
-                android:textColor="?attr/colorOnPrimary"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -209,7 +209,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/dark_mode"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <androidx.appcompat.widget.SwitchCompat
@@ -225,7 +225,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="@string/sounds_notifications"
-                android:textColor="?attr/colorOnPrimary"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -254,7 +254,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/play_sound_when_timer_ends"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <androidx.appcompat.widget.SwitchCompat
@@ -276,7 +276,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/show_notifications"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <androidx.appcompat.widget.SwitchCompat
@@ -298,7 +298,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/play_background_music"
-                            android:textColor="?attr/colorOnPrimary"
+                            android:textColor="@color/white"
                             android:textSize="16sp" />
 
                         <androidx.appcompat.widget.SwitchCompat

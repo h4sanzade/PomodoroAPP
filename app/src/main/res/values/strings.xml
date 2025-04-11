@@ -75,4 +75,6 @@
     <string name="three_day_streak">3-Day Streak</string>
     <string name="seven_day_streak">7-Day Streak</string>
     <string name="thirty_day_streak">30-Day Streak</string>
+    <string name="_0">0</string>
+    <string name="minus">-</string>
 </resources>
