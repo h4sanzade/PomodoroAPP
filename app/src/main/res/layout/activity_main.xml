@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
+    android:background="#747070"
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
@@ -12,7 +12,7 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginTop="32dp"
-        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+        app:cardBackgroundColor="#575757"
         app:cardCornerRadius="150dp"
         app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,10 @@
         android:text="@string/start"
         android:textSize="18sp"
         app:cornerRadius="30dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        app:strokeColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_timer" />
 
@@ -143,7 +146,9 @@
         android:src="@drawable/ic_settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="?attr/colorOnPrimary" />
+        android:backgroundTint="#575757"
+        app:tint="@color/black"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_stats"
@@ -153,7 +158,9 @@
         android:src="@drawable/ic_statistics"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="?attr/colorOnPrimary" />
+        android:backgroundTint="#575757"
+        app:tint="@color/black"
+        />
 
     <TextView
         android:id="@+id/text_motivation"

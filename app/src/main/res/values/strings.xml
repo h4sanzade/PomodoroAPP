@@ -1,3 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PomodoroAPP</string>
+    <string name="app_name">FokusTimer</string>
+
+    <!-- Main Screen -->
+    <string name="focus_session">Focus Session</string>
+    <string name="break_session">Break</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="today_s_focus_sessions">Today's Focus Sessions</string>
+    <string name="of">of</string>
+
+    <!-- Settings Screen -->
+    <string name="settings">Settings</string>
+    <string name="timer_settings">Timer Settings</string>
+    <string name="focus_duration_min">Focus Duration (min)</string>
+    <string name="break_duration_min">Break Duration (min)</string>
+    <string name="daily_goal">Daily Goal</string>
+    <string name="daily_focus_sessions_goal">Daily Focus Session Goal</string>
+    <string name="appearance">Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="sounds_notifications">Sounds &amp; Notifications</string>
+    <string name="play_sound_when_timer_ends">Play sound when timer ends</string>
+    <string name="show_notifications">Show notifications</string>
+    <string name="play_background_music">Play background music</string>
+    <string name="save_settings">Save Settings</string>
+
+    <!-- Statistics Screen -->
+    <string name="statistics">Statistics</string>
+    <string name="total_focus_time">Total Focus Time</string>
+    <string name="completed_sessions">Completed Sessions</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="total">Total</string>
+    <string name="daily_streak">Daily Streak</string>
+    <string name="days">days</string>
+    <string name="weekly_activity">Weekly Activity</string>
+    <string name="most_productive_days">Most Productive Time</string>
+    <string name="day">Day</string>
+    <string name="time">Time</string>
+    <string name="achievement">Achievements</string>
+    <string name="no_achievements_yet">No achievements yet</string>
+    <string name="export_statistics">Export Statistics</string>
+
+    <!-- Notifications and Other Texts -->
+    <string name="session_completed">Session completed!</string>
+    <string name="time_to_break">Time for a break!</string>
+    <string name="time_to_focus">Time to focus!</string>
+    <string name="session_reset">Session reset</string>
+    <string name="settings_saved">Settings saved</string>
+
+    <!-- Motivation Messages -->
+    <string-array name="motivation_quotes">
+        <item>Focus is the key to success.</item>
+        <item>Focus now, celebrate later.</item>
+        <item>Big things start with small steps.</item>
+        <item>Don’t delay, plan.</item>
+        <item>What you do today shapes your tomorrow.</item>
+        <item>Maintain focus to reach your goal.</item>
+        <item>Each session brings you one step closer to your goal.</item>
+        <item>Uninterrupted work brings uninterrupted success.</item>
+        <item>Time is your most valuable asset. Use it wisely.</item>
+        <item>Regular breaks lead to higher productivity.</item>
+    </string-array>
+
+    <!-- Achievement Notifications -->
+    <string name="achievement_unlocked">Achievement unlocked: %1$s</string>
+    <string name="first_session">First Session</string>
+    <string name="five_sessions">5 Sessions</string>
+    <string name="ten_sessions">10 Sessions</string>
+    <string name="twenty_five_sessions">25 Sessions</string>
+    <string name="fifty_sessions">50 Sessions</string>
+    <string name="hundred_sessions">100 Sessions</string>
+    <string name="three_day_streak">3-Day Streak</string>
+    <string name="seven_day_streak">7-Day Streak</string>
+    <string name="thirty_day_streak">30-Day Streak</string>
 </resources>

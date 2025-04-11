@@ -246,3 +246,384 @@
                         android:layout_height="wrap_content"
                         android:text="@string/weekly_activity"
                         android:textColor="?attr/colorOnPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/weekly_activity"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp">
+
+                                <LinearLayout
+                                    android:id="@+id/layout_weekly_chart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="200dp"
+                                    android:orientation="horizontal"
+                                    android:gravity="bottom">
+
+                                    <!-- Gün sütunları dinamik olarak eklenecek -->
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Pzt"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sal"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Çar"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Per"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Cum"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:layout_marginEnd="8dp"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Cmt"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="48dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="vertical"
+                                        android:gravity="bottom|center_horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginBottom="4dp"/>
+
+                                        <View
+                                            android:layout_width="24dp"
+                                            android:layout_height="0dp"
+                                            android:background="?attr/colorAccent" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Paz"
+                                            android:textColor="?attr/colorOnPrimary"
+                                            android:textSize="12sp"
+                                            android:layout_marginTop="4dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/most_productive_days"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/day"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/text_most_productive_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="-"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/time"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/text_most_productive_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="-"
+                                android:textColor="?attr/colorOnPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="?attr/colorPrimaryVariant"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_achievements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp" />
+
+                    <TextView
+                        android:id="@+id/text_no_achievements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:text="@string/no_achievements_yet"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/button_export_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/export_statistics"
+                android:textSize="16sp"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
