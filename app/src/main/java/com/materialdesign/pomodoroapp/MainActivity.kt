@@ -15,6 +15,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
+import com.materialdesign.pomodoroapp.R
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -44,17 +45,8 @@ class MainActivity : AppCompatActivity() {
     private var mediaPlayer: MediaPlayer? = null
     private var backgroundMusicPlayer: MediaPlayer? = null
 
-    // Motivation quotes
-    private val motivationalQuotes = arrayOf(
-        "Focus on being productive instead of busy.",
-        "The key is not to prioritize what's on your schedule, but to schedule your priorities.",
-        "Action is the foundational key to all success.",
-        "You don't have to be great to start, but you have to start to be great.",
-        "The way to get started is to quit talking and begin doing.",
-        "Don't wait. The time will never be just right.",
-        "The future depends on what you do today.",
-        "Don't count the days, make the days count."
-    )
+    // Motivational quotes - moved to strings.xml
+    private lateinit var motivationalQuotes: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         initViews()
         loadSettings()
+        motivationalQuotes = resources.getStringArray(R.array.motivational_quotes)
         updateTimerText()
         updateDailyGoal()
         createNotificationChannel()
@@ -153,7 +146,7 @@ class MainActivity : AppCompatActivity() {
                     saveStatistics()
 
                     // Show notification
-                    showNotification("Focus session completed!", "Time for a break.")
+                    showNotification(getString(R.string.focus_completed), getString(R.string.time_for_break))
                     playSound()
 
                     // Switch to break
@@ -163,7 +156,7 @@ class MainActivity : AppCompatActivity() {
                     // Break finished, back to focus
                     isBreak = false
                     textSessionType.text = getString(R.string.focus_session)
-                    showNotification("Break completed!", "Ready for another focus session?")
+                    showNotification(getString(R.string.break_completed), getString(R.string.ready_for_focus))
                     playSound()
                 }
 
@@ -268,7 +261,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = "Pomodoro Timer"
+            val name = getString(R.string.app_name)
             val descriptionText = "Notifications for Pomodoro Timer"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
             val channel = NotificationChannel("POMODORO", name, importance).apply {

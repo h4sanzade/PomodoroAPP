@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
+import com.materialdesign.pomodoroapp.R
 import java.io.File
 import java.io.FileOutputStream
 import java.text.SimpleDateFormat

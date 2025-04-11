@@ -7,8 +7,9 @@
     <string name="break_session">Break</string>
     <string name="start">Start</string>
     <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
     <string name="reset">Reset</string>
-    <string name="today_s_focus_sessions">Today's Focus Sessions</string>
+    <string name="today_s_focus_sessions">Today\'s Focus Sessions</string>
     <string name="of">of</string>
 
     <!-- Settings Screen -->
@@ -36,7 +37,7 @@
     <string name="daily_streak">Daily Streak</string>
     <string name="days">days</string>
     <string name="weekly_activity">Weekly Activity</string>
-    <string name="most_productive_days">Most Productive Time</string>
+    <string name="most_productive_days">Most Productive Days</string>
     <string name="day">Day</string>
     <string name="time">Time</string>
     <string name="achievement">Achievements</string>
@@ -44,24 +45,33 @@
     <string name="export_statistics">Export Statistics</string>
 
     <!-- Notifications and Other Texts -->
-    <string name="session_completed">Session completed!</string>
-    <string name="time_to_break">Time for a break!</string>
-    <string name="time_to_focus">Time to focus!</string>
+    <string name="focus_completed">Focus session completed!</string>
+    <string name="time_for_break">Time for a break!</string>
+    <string name="break_completed">Break completed!</string>
+    <string name="ready_for_focus">Ready for another focus session?</string>
     <string name="session_reset">Session reset</string>
     <string name="settings_saved">Settings saved</string>
 
     <!-- Motivation Messages -->
-    <string-array name="motivation_quotes">
+    <string-array name="motivational_quotes">
         <item>Focus is the key to success.</item>
         <item>Focus now, celebrate later.</item>
         <item>Big things start with small steps.</item>
-        <item>Don’t delay, plan.</item>
+        <item>Don\'t delay, plan.</item>
         <item>What you do today shapes your tomorrow.</item>
         <item>Maintain focus to reach your goal.</item>
         <item>Each session brings you one step closer to your goal.</item>
         <item>Uninterrupted work brings uninterrupted success.</item>
         <item>Time is your most valuable asset. Use it wisely.</item>
         <item>Regular breaks lead to higher productivity.</item>
+        <item>Focus on being productive instead of busy.</item>
+        <item>The key is not to prioritize what\'s on your schedule, but to schedule your priorities.</item>
+        <item>Action is the foundational key to all success.</item>
+        <item>You don\'t have to be great to start, but you have to start to be great.</item>
+        <item>The way to get started is to quit talking and begin doing.</item>
+        <item>Don\'t wait. The time will never be just right.</item>
+        <item>The future depends on what you do today.</item>
+        <item>Don\'t count the days, make the days count.</item>
     </string-array>
 
     <!-- Achievement Notifications -->
@@ -75,6 +85,4 @@
     <string name="three_day_streak">3-Day Streak</string>
     <string name="seven_day_streak">7-Day Streak</string>
     <string name="thirty_day_streak">30-Day Streak</string>
-    <string name="_0">0</string>
-    <string name="minus">-</string>
 </resources>
