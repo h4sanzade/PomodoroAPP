@@ -129,33 +129,31 @@ class StatisticsActivity : AppCompatActivity() {
     }
 
     private fun determineMostProductiveTime() {
-        // In a real app, you would track sessions with timestamps
-        // For simplicity, we'll use a placeholder
+
         textMostProductiveTime.text = "Morning"
     }
 
     private fun updateWeeklyChart() {
-        // This would update the chart view with actual data
-        // For a real app, you'd manipulate the view heights based on data
+
     }
 
     private fun checkAchievements(totalMinutes: Int, totalSessions: Int, streak: Int) {
         var hasAchievements = false
 
-        // In a real app, you would have a more sophisticated system
+
         if (totalSessions >= 50) {
             hasAchievements = true
-            // Add achievement to list or display it
+
         }
 
         if (totalMinutes >= 500) {
             hasAchievements = true
-            // Add achievement to list
+
         }
 
         if (streak >= 7) {
             hasAchievements = true
-            // Add achievement for weekly streak
+
         }
 
         textNoAchievements.visibility = if (hasAchievements) View.GONE else View.VISIBLE

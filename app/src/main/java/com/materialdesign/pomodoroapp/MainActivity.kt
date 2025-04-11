@@ -224,7 +224,7 @@ class MainActivity : AppCompatActivity() {
 
         // Save week data
         val calendar = Calendar.getInstance()
-        val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1 // 0 = Sunday, 6 = Saturday
+        val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1
         val weekSessionsKey = "weekSessions_$dayOfWeek"
         val weekSessions = sharedPreferences.getInt(weekSessionsKey, 0) + 1
 
@@ -237,9 +237,9 @@ class MainActivity : AppCompatActivity() {
         val currentStreak = if (lastActiveDay == today - 1 || lastActiveDay == -1) {
             sharedPreferences.getInt("currentStreak", 0) + 1
         } else if (lastActiveDay != today) {
-            1 // Reset streak if not consecutive
+            1
         } else {
-            sharedPreferences.getInt("currentStreak", 0) // Same day, no change
+            sharedPreferences.getInt("currentStreak", 0)
         }
 
         with(sharedPreferences.edit()) {
@@ -249,7 +249,7 @@ class MainActivity : AppCompatActivity() {
             putInt("lastActiveDay", today)
             putInt("currentStreak", currentStreak)
 
-            // Update best streak if needed
+
             val bestStreak = sharedPreferences.getInt("bestStreak", 0)
             if (currentStreak > bestStreak) {
                 putInt("bestStreak", currentStreak)
@@ -286,7 +286,7 @@ class MainActivity : AppCompatActivity() {
                 try {
                     notify(1, builder.build())
                 } catch (e: SecurityException) {
-                    // Handle notification permission denied
+
                 }
             }
         }
@@ -320,7 +320,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        // Save state if needed
+
         val sharedPreferences = getSharedPreferences("PomodoroTimer", Context.MODE_PRIVATE)
         with(sharedPreferences.edit()) {
             putLong("timeLeftInMillis", timeLeftInMillis)
@@ -332,11 +332,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Load settings in case they were changed
+
         loadSettings()
         updateDailyGoal()
 
-        // Check if we need to restore timer state
+
         val sharedPreferences = getSharedPreferences("PomodoroTimer", Context.MODE_PRIVATE)
         val savedTime = sharedPreferences.getLong("timeLeftInMillis", 0L)
         val savedIsRunning = sharedPreferences.getBoolean("isTimerRunning", false)
@@ -353,7 +353,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Set a new motivational quote
+
         setRandomMotivationalQuote()
     }
 
