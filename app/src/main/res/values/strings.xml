@@ -11,6 +11,8 @@
     <string name="reset">Reset</string>
     <string name="today_s_focus_sessions">Today\'s Focus Sessions</string>
     <string name="of">of</string>
+    <string name="_0">0</string>
+    <string name="minus">-</string>
 
     <!-- Settings Screen -->
     <string name="settings">Settings</string>
