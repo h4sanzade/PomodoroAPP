@@ -284,7 +284,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Pzt"
+                                    android:text="Mon"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -313,7 +313,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Sal"
+                                    android:text="Tue"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -342,7 +342,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Çar"
+                                    android:text="Wed"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -371,7 +371,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Per"
+                                    android:text="Thu"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -400,7 +400,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Cum"
+                                    android:text="Fri"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -429,7 +429,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Cmt"
+                                    android:text="Sat"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
@@ -457,7 +457,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Paz"
+                                    android:text="Sun"
                                     android:textColor="@color/white"
                                     android:textSize="12sp"
                                     android:layout_marginTop="4dp"/>
