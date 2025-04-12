@@ -77,7 +77,7 @@ Main Screen
 ![image alt](https://github.com/h4sanzade/PomodoroAPP/blob/master/main_Screen.png?raw=true)
 
 Statistics Screen
-![image alt](https://github.com/h4sanzade/PomodoroAPP/blob/master/statistics_screen.png?raw=true)
+![image alt](https://github.com/h4sanzade/pomodoro-app-main/blob/master/statistics_screen.png?raw=true)
 
 Settings Screen
 ![image alt](https://github.com/h4sanzade/PomodoroAPP/blob/master/settings_screen.png?raw=true)
